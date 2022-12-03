@@ -394,6 +394,7 @@ function init() {
         el.classList.add('smooth');
       }
 
+      document.body.style.cursor = 'none';
       loader.overlay.style.opacity = 0;
       loader.overlay.style.zIndex = 100;
       setTimeout(() => { loader.bar.style.zIndex = 98; }, 1400);

@@ -3,7 +3,6 @@ body {
   font-family: 'FuturaBT-Medium';
   color: #fff;
   background-color: #181818;
-  cursor: none;
   position: relative;
 }
 
@@ -136,7 +135,7 @@ polygon {
 
 #cursor-container {
   position: absolute;
-  z-index: 99;
+  z-index: 110;
   top: -40px;
   mix-blend-mode: difference;
 }
