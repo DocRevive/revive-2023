@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'FuturaBT-Medium';
+  color: #fff;
+  background-color: #181818;
+  position: relative;
+}
+
+main, body, #bg-container, .overlay {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+main, #bg-container, .overlay, .element, .sub-element {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  z-index: 101;
+  position: relative;
+  border-bottom-style: solid;
+  border-bottom-color: #fff;
+  pointer-events: auto;
+  cursor: none;
+}
+
+#contact a {
+  border-bottom-width: 1px;
+}
+
+#contact a:hover {
+  border-bottom-width: 2px;
+}
+
+#exp a {
+  border-bottom-width: 3px;
+}
+
+#exp a:hover {
+  border-bottom-width: 6px;
+}
+
+p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+#bg, .smooth {
+  transition: transform 1.5s cubic-bezier(.17,.53,.14,.98);
+}
+
+.triangle {
+  transition: 0.2s linear;
+}
+
+#intro {
+  filter: brightness(1.2) saturate(1.5) blur(0.4px);
+}
+
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#bg-container {
+  z-index: -100;
+}
+
+#load-overlay {
+  z-index: 102;
+}
+
+#load-arrow {
+  z-index: 103;
+}
+
+#rotate-overlay {
+  display: none;
+  z-index: 104;
+}
+
+.overlay, .element, #bg, #cursor-container {
+  pointer-events: none;
+}
+
+#bg, .element {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.overlay {
+  background-color: #181818;
+  transition: opacity 0.9s ease-in-out;
+}
+
+#load-message, #load-arrow {
+  opacity: 0;
+}
+
+polygon {
+  fill: #181818;
+}
+
+.separator {
+  margin: 0 8px;
+  transform: scaleX(0.8) scaleY(2.2);
+  display: inline-block;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#rotate-overlay img {
+  width: 200px;
+}
+
+#cursor {
+  height: 40px;
+  transition: transform 0.2s ease-out;
+}
+
+#cursor-container {
+  position: absolute;
+  z-index: 110;
+  top: -40px;
+  mix-blend-mode: difference;
+}
+
+img {
+  height: inherit;
+}
+
+#quote {
+  padding-left: 10%;
+  display: inline-block;
+}
